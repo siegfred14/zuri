@@ -8,4 +8,4 @@ print(girl)
 print(man)
 print(boy + man)
 print(woman + boy)
-print(man + w)
+print(man + w) """ Using an IDE like VScode allows you to trace the location of your error at ease by  """
