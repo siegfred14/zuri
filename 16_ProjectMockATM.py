@@ -27,7 +27,9 @@ allowedPassword = ['passSieg', 'passKach', 'passOluchi', 'passChide']
 if(username in allowedUsers):
     password = input("Your Password? \n")
 
-    if(password == allowedPassword):
+    userId = allowedUsers.index(username)
+
+    if(password == allowedPassword[userId]):
         print('Welcome %s' % username);
     else:
         print('Password incorrect, Please try again')
