@@ -9,3 +9,10 @@ if(username in allowedUsers):
 
     if(password == allowedPassword):
         print('Welcome %s' % username);
+    else:
+        print('Password incorrect, Please try again')
+else:
+    print('Name not found. Please Try Again')
+
+    # create form add username and password to list
+
