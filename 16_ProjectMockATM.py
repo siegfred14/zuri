@@ -38,6 +38,28 @@ if(username in allowedUsers):
         print('2. Cash Deposit')
         print('3. Complaint')
 
+        selectedOption = int(input('Please Select an Option: \n'))
+
+        balance = 500
+
+        if(selectedOption == 1):
+            print('You selected %i' %selectedOption)
+            amountToWithdraw = int(input('Enter Amount: \n'))
+            if(amountToWithdraw > balance):
+                print('Insufficient Balance')
+            else:
+                balance = balance - amountToWithdraw
+                print('Please Take your Cash')
+                print('Your Balance is %i' %balance)
+
+        elif(selectedOption == 2):
+            print('You selected %i' % selectedOption)
+
+        elif(selectedOption == 3):
+            print('You selected %i' % selectedOption)
+
+        else:
+            print('Invalid Selection, Please Try Again')
 
     else:
         print('Password incorrect, Please try again')
