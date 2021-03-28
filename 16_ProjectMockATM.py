@@ -32,7 +32,8 @@ if(username in allowedUsers):
     if(password == allowedPassword[userId]):
 
         #successful log in
-        print('Welcome %s' % username);
+        print('Dear %s' % username);
+        print('Welcome to Zuri Bank!')
         print('These are your available options')
         print('1. Withdrawal')
         print('2. Cash Deposit')
@@ -51,6 +52,7 @@ if(username in allowedUsers):
                 balance = balance - amountToWithdraw
                 print('Please Take your Cash')
                 print('Your Balance is %i' %balance)
+                print('Thank You For Using Zuri Bank!')
 
         elif(selectedOption == 2):
             print('You selected %i' % selectedOption)
@@ -58,6 +60,7 @@ if(username in allowedUsers):
             balance = balance + amountToDeposit
             print('Transaction Successful')
             print('Your Ledger Balance is %i' %balance)
+            print('Thank You For Using Zuri Bank!')
 
         elif(selectedOption == 3):
             print('You selected %i' % selectedOption)
