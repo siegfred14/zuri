@@ -54,6 +54,10 @@ if(username in allowedUsers):
 
         elif(selectedOption == 2):
             print('You selected %i' % selectedOption)
+            amountToDeposit = int(input('Enter Amount: \n'))
+            balance = balance + amountToDeposit
+            print('Transaction Successful')
+            print('Your Ledger Balance is %i' %balance)
 
         elif(selectedOption == 3):
             print('You selected %i' % selectedOption)
