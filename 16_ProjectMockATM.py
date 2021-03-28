@@ -30,7 +30,15 @@ if(username in allowedUsers):
     userId = allowedUsers.index(username)
 
     if(password == allowedPassword[userId]):
+
+        #successful log in
         print('Welcome %s' % username);
+        print('These are your available options')
+        print('1. Withdrawal')
+        print('2. Cash Deposit')
+        print('3. Complaint')
+
+
     else:
         print('Password incorrect, Please try again')
 else:
