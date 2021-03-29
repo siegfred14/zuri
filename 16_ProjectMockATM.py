@@ -75,7 +75,7 @@ if(username in allowedUsers):
         elif(selectedOption == 3):
             print('What Issue Would You Like To Report')
             input('')
-            print('\n Thank You For Contacting Us')
+            print('\n Thank You For Contacting Us!')
 
         else:
             print('Invalid Selection, Please Try Again')
