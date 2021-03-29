@@ -41,7 +41,7 @@ if(username in allowedUsers):
         print("Today is ", abujaDate)
         print("Time is ", abujaTime)
 
-        print('\n Dear %s' % username);
+        print('\n Dear %s' % username)
         print('Welcome to Zuri Bank!')
         print('These are your available options')
         print('1. Withdrawal')
@@ -73,7 +73,9 @@ if(username in allowedUsers):
             print('Thank You For Using Zuri Bank!')
 
         elif(selectedOption == 3):
-            print('You selected %i' % selectedOption)
+            print('What Issue Would You Like To Report')
+            input('')
+            print('\n Thank You For Contacting Us')
 
         else:
             print('Invalid Selection, Please Try Again')
