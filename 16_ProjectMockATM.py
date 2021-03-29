@@ -18,6 +18,8 @@
 
 #     modifying the program to check username and password from list
 
+from datetime import datetime
+
 username = input('What is your username? \n')
 print(username)
 
@@ -32,12 +34,20 @@ if(username in allowedUsers):
     if(password == allowedPassword[userId]):
 
         #successful log in
-        print('Dear %s' % username);
+
+        # Date and Time added
+        abujaDate = datetime.now().strftime("%d/%m/%Y")
+        abujaTime = datetime.now().strftime("%H:%M:%S")
+        print("Today is ", abujaDate)
+        print("Time is ", abujaTime)
+
+        print('\n Dear %s' % username);
         print('Welcome to Zuri Bank!')
         print('These are your available options')
         print('1. Withdrawal')
         print('2. Cash Deposit')
         print('3. Complaint')
+
 
         selectedOption = int(input('Please Select an Option: \n'))
 
