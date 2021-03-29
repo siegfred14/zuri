@@ -20,6 +20,7 @@
 
 from datetime import datetime
 
+# Automated Teller Machine Mock Project
 username = input('What is your username? \n')
 print(username)
 
@@ -41,6 +42,7 @@ if(username in allowedUsers):
         print("Today is ", abujaDate)
         print("Time is ", abujaTime)
 
+        #Salutations and Options
         print('\n Dear %s' % username)
         print('Welcome to Zuri Bank!')
         print('These are your available options')
