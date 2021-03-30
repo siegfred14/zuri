@@ -21,3 +21,7 @@ print(result)
 
 # NOTE: As best practice, do NOT start a variable name with a number
 # Use Camel Casing eg camelCasing or snake_casing
+
+# Operation Subtraction
+
+result = firstValue - secondValue
