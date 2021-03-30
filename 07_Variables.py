@@ -8,3 +8,9 @@ print(cup)
 cup = 'Sand'
 
 print(cup)
+
+#Calculations
+
+firstValue = 67
+secondValue = 50
+
