@@ -18,3 +18,5 @@ secondValue = 50
 result = firstValue + secondValue
 
 print(result)
+
+#NOTE: As best practice, do NOT start a variable name with a number
