@@ -9,14 +9,15 @@ cup = 'Sand'
 
 print(cup)
 
-#Calculations
+# Calculations
 
 firstValue = 67
 secondValue = 50
 
-#Operation Addition
+# Operation Addition
 result = firstValue + secondValue
 
 print(result)
 
-#NOTE: As best practice, do NOT start a variable name with a number
+# NOTE: As best practice, do NOT start a variable name with a number
+# Use Camel Casing eg camelCasing or snake_casing
