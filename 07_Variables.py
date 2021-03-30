@@ -14,3 +14,7 @@ print(cup)
 firstValue = 67
 secondValue = 50
 
+#Operation Addition
+result = firstValue + secondValue
+
+print(result)
