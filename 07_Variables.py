@@ -1,4 +1,10 @@
 #Variables
 #Variables allow you to store a single value at a time
 
-cup = 'water'
+cup = 'water' #Water is the content inside the container cup. Our container is the variable
+
+print(cup)
+
+cup = 'Sand'
+
+print(cup)
