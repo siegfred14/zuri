@@ -18,7 +18,7 @@ number1 = 4.5
 number2 = 0
 number3 = 5
 number4 = -4
-number5 = 2535224436486199013
+number5 = 25352244364
 
 # A number is a datatype without quotes
 #Number Operations
@@ -27,3 +27,7 @@ number5 = 2535224436486199013
 print(number1 + number3)
 
 # Note: You cannot add a string and a number
+
+# Division
+
+print(number5/number3)
