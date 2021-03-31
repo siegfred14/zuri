@@ -10,3 +10,5 @@ string5 = "6" # Once it's in-between quotes, it's a string
 print(string1 + string4) # To print 2 strings together
 
 print(string1 + ' ' + string4) # To add space in between
+
+print(string1 + ' is different from ' + string4) # To reformat
