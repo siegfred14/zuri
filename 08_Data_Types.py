@@ -19,3 +19,5 @@ number2 = 0
 number3 = 5
 number4 = -4
 number5 = 2535224436486199013
+
+# A number is a datatype without quotes
