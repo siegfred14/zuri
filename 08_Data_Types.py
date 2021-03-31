@@ -11,4 +11,11 @@ print(string1 + string4) # To print 2 strings together
 
 print(string1 + ' ' + string4) # To add space in between
 
-print(string1 + ' is different from ' + string4) # To reformat
+print(string1 + ' is different from ' + string4) # To reformat by concantenating
+
+# Data Type Number
+number1 = 4.5
+number2 = 0
+number3 = 5
+number4 = -4
+number5 = 2535224436486199013
