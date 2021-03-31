@@ -21,3 +21,9 @@ number4 = -4
 number5 = 2535224436486199013
 
 # A number is a datatype without quotes
+#Number Operations
+#Addition
+
+print(number1 + number3)
+
+# Note: You cannot add a string and a number
