@@ -25,7 +25,11 @@ print(type(value))
 print('Siegfred is a Top Computer Programmer')
 
 # String functions
-# capitalize() - converts the first character of a string to uppercase
+# 1. capitalize() - converts the first character of a string to uppercase
 
 siegfred = 'siegfred is a top computer programmer'
 print(siegfred.capitalize())
+
+# 2. casefold() - converts string to lowercase
+sam = 'SHE IS BIG'
+print(sam.casefold())
