@@ -19,3 +19,7 @@ print(0x2BCD)
 # To find Datatype of a variable
 value = 14
 print(type(value))
+
+# Strings
+# denoted by str in python
+print('Siegfred is a Top Computer Programmer')
