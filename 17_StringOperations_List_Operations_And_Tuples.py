@@ -14,3 +14,8 @@ print(0o777) # Answer is 511 in decimal
 # zero + x or X
 
 print(0x2BCD)
+
+
+# To find Datatype of a variable
+value = 14
+print(type(value))
