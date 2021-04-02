@@ -37,3 +37,7 @@ print(sam.casefold())
 # 3. count() - returns the number of times a specific value occurs in a string
 print(siegfred.count('e'))
 
+# 4. endswith() - returns true if a string ends with the specified value
+print(siegfred.endswith('e')) #false
+print(siegfred.endswith('r')) #true
+
