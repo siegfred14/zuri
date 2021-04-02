@@ -56,3 +56,7 @@ print(sam.isalnum()) # false
 kachi = 'elizabeth23'
 print(kachi.isalnum()) # true
 
+# 8. isalpha() - returns true if all characters in the string are alphabets
+# 9. isdecimal() - returns true if all characters in the string are decimal
+# 10. isdigit() - returns true if all characters in the string are digits
+
