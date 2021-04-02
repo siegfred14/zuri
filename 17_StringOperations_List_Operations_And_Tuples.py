@@ -41,3 +41,6 @@ print(siegfred.count('e'))
 print(siegfred.endswith('e')) #false
 print(siegfred.endswith('r')) #true
 
+# 5. find() - searches the string for a specified value and returns the position is was found
+print(siegfred.find('put'))
+
