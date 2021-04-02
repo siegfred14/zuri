@@ -60,3 +60,7 @@ print(kachi.isalnum()) # true
 # 9. isdecimal() - returns true if all characters in the string are decimal
 # 10. isdigit() - returns true if all characters in the string are digits
 
+# 11. replace() - returns a string where a specified value is replaced with a specified value
+print(siegfred.replace('e', 'o'))
+print(siegfred.replace('siegfred', 'SIEGfRed'))
+
