@@ -33,3 +33,7 @@ print(siegfred.capitalize())
 # 2. casefold() - converts string to lowercase
 sam = 'SHE IS BIG'
 print(sam.casefold())
+
+# 3. count() - returns the number of times a specific value occurs in a string
+print(siegfred.count('e'))
+
