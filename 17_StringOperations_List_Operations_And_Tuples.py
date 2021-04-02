@@ -44,3 +44,9 @@ print(siegfred.endswith('r')) #true
 # 5. find() - searches the string for a specified value and returns the position is was found
 print(siegfred.find('put'))
 
+# 6. isalpha() - returns true if all characters in the string are alphabets
+print(sam.isalpha()) # false because of the space in between
+
+kachi = 'elizabeth'
+print(kachi.isalpha()) #true
+
