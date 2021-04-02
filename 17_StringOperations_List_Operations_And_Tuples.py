@@ -50,3 +50,9 @@ print(sam.isalpha()) # false because of the space in between
 kachi = 'elizabeth'
 print(kachi.isalpha()) #true
 
+# 7. isalnum() - returns true if all characters in the string are alphanumeric
+print(sam.isalnum()) # false
+
+kachi = 'elizabeth23'
+print(kachi.isalnum()) # true
+
