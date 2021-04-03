@@ -64,3 +64,6 @@ print(kachi.isalnum()) # true
 print(siegfred.replace('e', 'o'))
 print(siegfred.replace('siegfred', 'SIEGfRed'))
 
+# 12. upper() converts a string into uppercase
+# 13. lower() converts a string into lowercase
+
