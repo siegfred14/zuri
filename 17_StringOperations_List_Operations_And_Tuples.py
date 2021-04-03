@@ -69,3 +69,9 @@ print(siegfred.replace('siegfred', 'SIEGfRed'))
 
 # 14 split() splits a string at the specified separator and returns a list
 
+#LISTS
+# List contains multiple items in a square bracket separated by a oomma.
+
+myHouse = ['siegfred', 'kachi', 'jason', 'rachael', 'samantha']
+print(myHouse)
+
