@@ -82,6 +82,10 @@ myHouse.append('nova scotia')
 print(myHouse)
 
 # clear - clears the list
-myHouse.clear()
-print(myHouse)
+# myHouse.clear()
+# print(myHouse)
+
+# copy returns a copy of the list
+newOne = myHouse.copy()
+print(newOne)
 
