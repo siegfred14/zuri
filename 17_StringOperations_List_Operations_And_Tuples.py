@@ -75,3 +75,9 @@ print(siegfred.replace('siegfred', 'SIEGfRed'))
 myHouse = ['siegfred', 'kachi', 'jason', 'rachael', 'samantha']
 print(myHouse)
 
+# List Operations
+# append - adds an element to the end of the list
+
+myHouse.append('nova scotia')
+print(myHouse)
+
