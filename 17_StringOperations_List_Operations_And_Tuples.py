@@ -89,3 +89,6 @@ print(myHouse)
 newOne = myHouse.copy()
 print(newOne)
 
+# count - counts the number of times an element appears in a list
+myHouse.count('samantha')
+
