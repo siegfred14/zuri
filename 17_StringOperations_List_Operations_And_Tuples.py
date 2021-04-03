@@ -81,3 +81,7 @@ print(myHouse)
 myHouse.append('nova scotia')
 print(myHouse)
 
+# clear - clears the list
+myHouse.clear()
+print(myHouse)
+
