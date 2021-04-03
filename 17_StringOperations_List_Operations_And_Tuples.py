@@ -67,3 +67,5 @@ print(siegfred.replace('siegfred', 'SIEGfRed'))
 # 12. upper() converts a string into uppercase
 # 13. lower() converts a string into lowercase
 
+# 14 split() splits a string at the specified separator and returns a list
+
