@@ -106,3 +106,7 @@ myHouse.pop()
 myHouse.reverse()
 print(myHouse)
 
+# sort - rearranges elements of the list in alphabetical order
+myHouse.sort()
+print(myHouse)
+
