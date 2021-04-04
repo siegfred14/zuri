@@ -110,3 +110,6 @@ print(myHouse)
 myHouse.sort()
 print(myHouse)
 
+# TUPLES
+houseItems = ('television', 'canape', 'lit', 'table')
+print(len(houseItems))
