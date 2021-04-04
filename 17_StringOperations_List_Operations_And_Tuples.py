@@ -125,3 +125,6 @@ currency2[0] = 'euros' # TypeError:
 # It is a collection which is ordered and unchangeable
 # It is similar to lists but immutable
 
+houseItems = ('canape', 'television', 'plate', 'fish', 4, 4.5)
+print(houseItems)
+
