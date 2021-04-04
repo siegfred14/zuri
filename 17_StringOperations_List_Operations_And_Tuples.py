@@ -128,3 +128,8 @@ currency2[0] = 'euros' # TypeError:
 houseItems = ('canape', 'television', 'plate', 'fish', 4, 4.5)
 print(houseItems)
 
+# To find length of string, list or tuple, use len
+print(len(siegfred))
+print(len(myHouse))'tuple' #object does not support item assignment
+# print(currency2)
+
