@@ -130,6 +130,6 @@ print(houseItems)
 
 # To find length of string, list or tuple, use len
 print(len(siegfred))
-print(len(myHouse))'tuple' #object does not support item assignment
+print(len(myHouse)) #'tuple' object does not support item assignment
 # print(currency2)
 
