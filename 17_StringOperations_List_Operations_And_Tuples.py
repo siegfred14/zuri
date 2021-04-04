@@ -102,3 +102,7 @@ print(myHouse)
 # pop - removes the last element in the list
 myHouse.pop()
 
+# reverse - reverses elements of the list
+myHouse.reverse()
+print(myHouse)
+
