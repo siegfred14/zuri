@@ -113,3 +113,9 @@ print(myHouse)
 # TUPLES
 houseItems = ('television', 'canape', 'lit', 'table')
 print(len(houseItems))
+
+# List vs Tuples
+currency = ['Naira', 'Dollar', 'Pounds']
+currency[0] = 'cedis' # replaces naira with cedis
+print(currency)
+
