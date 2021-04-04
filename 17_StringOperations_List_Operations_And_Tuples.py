@@ -92,3 +92,6 @@ print(newOne)
 # count - counts the number of times an element appears in a list
 myHouse.count('samantha')
 
+# index - checks the index of the element
+myHouse.index('kachi')
+
