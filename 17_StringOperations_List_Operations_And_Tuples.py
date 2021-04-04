@@ -119,3 +119,9 @@ currency = ['Naira', 'Dollar', 'Pounds']
 currency[0] = 'cedis' # replaces naira with cedis
 print(currency)
 
+currency2 = ('Naira', 'Dollar', 'Pounds')
+currency2[0] = 'euros' # TypeError:
+# used to store multiple items in a single variable
+# It is a collection which is ordered and unchangeable
+# It is similar to lists but immutable
+
