@@ -95,3 +95,7 @@ myHouse.count('samantha')
 # index - checks the index of the element
 myHouse.index('kachi')
 
+# insert - inserts an element at the given index
+myHouse.insert(0, 'canada')
+print(myHouse)
+
