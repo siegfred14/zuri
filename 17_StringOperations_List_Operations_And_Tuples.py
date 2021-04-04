@@ -99,3 +99,6 @@ myHouse.index('kachi')
 myHouse.insert(0, 'canada')
 print(myHouse)
 
+# pop - removes the last element in the list
+myHouse.pop()
+
