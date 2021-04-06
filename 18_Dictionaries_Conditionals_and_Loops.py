@@ -14,3 +14,7 @@ fruit_basket = {
     "pineapple": [40, 30, 50, 70]
 }
 
+print(len(first_variable))
+print(len(second_variable))
+print(len(fruit_basket))
+
