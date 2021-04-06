@@ -34,3 +34,7 @@ print("we have {} mangoes".format(mangoes))
 mangoes = fruit_basket.get("apples", 0)
 print("we have {} apples".format(mangoes))
 
+# To see all keys in the dictionary
+all_fruit_keys = fruit_basket.keys()
+print(all_fruit_keys)
+
