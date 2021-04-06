@@ -42,3 +42,7 @@ print(all_fruit_keys)
 new_fruit_basket = fruit_basket["mango"] - 1
 print(new_fruit_basket)
 
+# or
+fruit_basket["mango"] = fruit_basket["mango"] - 1
+print(fruit_basket)
+
