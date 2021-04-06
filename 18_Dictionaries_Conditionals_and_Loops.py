@@ -7,3 +7,10 @@ second_variable = dict()
 print(type(first_variable))
 print(type(second_variable))
 
+fruit_basket = {
+    "mango": 40,
+    "oranges": 30,
+    "pawpaw": 3,
+    "pineapple": [40, 30, 50, 70]
+}
+
