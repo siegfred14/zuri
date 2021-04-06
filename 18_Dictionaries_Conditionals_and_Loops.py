@@ -28,3 +28,9 @@ mangoes = fruit_basket["mango"]
 print(mangoes)
 print("we have {} mangoes".format(mangoes))
 
+# if we use a value that is in-existent, we can use 'get'
+# mangoes = fruit_basket["apples"] #error
+
+mangoes = fruit_basket.get("apples", 0)
+print("we have {} apples".format(mangoes))
+
