@@ -18,3 +18,8 @@ print(len(first_variable))
 print(len(second_variable))
 print(len(fruit_basket))
 
+# unlike lists, dictionaries do not hold duplicate keys
+# dictionaries do not hold only primitive data types, they also hold lists classes, etc
+
+print(isinstance(fruit_basket, dict)) #To check if fruit_basket is an instance of a dictionary data type
+
