@@ -38,3 +38,7 @@ print("we have {} apples".format(mangoes))
 all_fruit_keys = fruit_basket.keys()
 print(all_fruit_keys)
 
+# To update a particular key from a dictionary
+new_fruit_basket = fruit_basket["mango"] - 1
+print(new_fruit_basket)
+
