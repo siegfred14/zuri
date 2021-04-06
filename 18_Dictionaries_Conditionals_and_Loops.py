@@ -23,3 +23,8 @@ print(len(fruit_basket))
 
 print(isinstance(fruit_basket, dict)) #To check if fruit_basket is an instance of a dictionary data type
 
+# Dictionary values can be accessed using their keys
+mangoes = fruit_basket["mango"]
+print(mangoes)
+print("we have {} mangoes".format(mangoes))
+
