@@ -46,3 +46,7 @@ print(new_fruit_basket)
 fruit_basket["mango"] = fruit_basket["mango"] - 1
 print(fruit_basket)
 
+# updating our dictionary to add new objects
+fruit_basket.update({"apples": 35})
+print(fruit_basket)
+
