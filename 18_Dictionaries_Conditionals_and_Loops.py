@@ -50,3 +50,6 @@ print(fruit_basket)
 fruit_basket.update({"apples": 35})
 print(fruit_basket)
 
+# To get all keys in the basket
+print(fruit_basket.items()) #gives you a list of tuples
+
