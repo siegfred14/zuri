@@ -58,3 +58,7 @@ print(fruit_basket.items()) #gives you a list of tuples
 if "apples" in fruit_basket:
     print(True)
 
+# to remove a key in the dictionary
+fruit_basket.pop("oranges")
+print(fruit_basket)
+
