@@ -53,3 +53,8 @@ print(fruit_basket)
 # To get all keys in the basket
 print(fruit_basket.items()) #gives you a list of tuples
 
+# to check if a key exists in the dictionary
+
+if "apples" in fruit_basket:
+    print(True)
+
