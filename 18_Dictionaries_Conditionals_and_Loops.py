@@ -68,3 +68,6 @@ print(fruit_basket)
 # to clear all keys in the dictionary
 # fruit_basket.clear()
 
+# to delete the dictionary (basket) entirely
+# del fruit_basket
+
