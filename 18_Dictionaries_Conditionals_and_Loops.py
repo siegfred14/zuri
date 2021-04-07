@@ -71,3 +71,11 @@ print(fruit_basket)
 # to delete the dictionary (basket) entirely
 # del fruit_basket
 
+
+# copying of dictionaries
+fruit_basket = {
+    "mango": 40,
+    "oranges": 30,
+    "pawpaw": 3,
+    "pineapple": {"good": 30, "bad": 34}
+}
