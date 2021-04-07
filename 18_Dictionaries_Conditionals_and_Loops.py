@@ -62,3 +62,6 @@ if "apples" in fruit_basket:
 fruit_basket.pop("oranges")
 print(fruit_basket)
 
+# another way to remove a key is
+# del fruit_basket["pineapples"]
+
