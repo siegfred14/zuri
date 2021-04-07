@@ -65,3 +65,6 @@ print(fruit_basket)
 # another way to remove a key is
 # del fruit_basket["pineapples"]
 
+# to clear all keys in the dictionary
+# fruit_basket.clear()
+
