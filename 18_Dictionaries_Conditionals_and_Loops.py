@@ -129,3 +129,6 @@ print(True if number > 10 else False)
 
 print("================== \n")
 
+#LOOPS - Statements that are executed sequencially
+# while, for
+
