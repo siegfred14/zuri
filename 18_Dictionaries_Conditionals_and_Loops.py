@@ -99,3 +99,9 @@ print(new_fruit_basket2)
 
 print(id(new_fruit_basket2))
 
+# Deep copy
+import copy
+
+new_fruit_basket3 = copy.deepcopy(fruit_basket)
+print(new_fruit_basket3)
+
