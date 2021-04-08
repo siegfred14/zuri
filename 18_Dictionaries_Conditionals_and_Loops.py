@@ -134,7 +134,11 @@ print("================== \n")
 
 names = ['siegfred', 'toonie', 'tola', 'kuza']
 
-if isinstance(names, list):
-    for i in names:
-        print(i)
+# if isinstance(names, list):
+#     for i in names:
+#         print(i)
+
+# looping strings
+for char in 'mosquitoes':
+    print(char)
 
