@@ -185,3 +185,6 @@ for food in foods:
         print(food, comp)
 
 # To enumerate
+for index, food in enumerate(food_add):
+    print("index -> {}, Value -> {}".format(index, food)) # or
+    print(f"index -> {index}, value -> {food}")
