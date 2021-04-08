@@ -163,6 +163,10 @@ for char in 'mosquitoes':
     print(char)
 
 # range -
-for number in range(8): # prints from 0 index 8
+for number in range(8): # prints from 0 to index 8
+    print(number)
+
+# range with initial point
+for number in range(2, 8): # prints from 2 to index 8
     print(number)
 
