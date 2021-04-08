@@ -156,3 +156,9 @@ for char in 'mosquitoes':
 
 print('===============')
 
+# pass - a statement that stands in for an a]execution statement saying do not do anything
+for char in 'mosquitoes':
+    if char == 'u':
+        pass
+    print(char)
+
