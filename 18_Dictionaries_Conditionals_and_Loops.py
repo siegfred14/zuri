@@ -176,3 +176,7 @@ for number in range(0, 50, 5): # prints from 5 steps 0 to index 50,
 else:
     print('Loop processing Done')
 
+# Nested for Loops
+foods = ["white_rice", "spaghetti", "beans"]
+food_add = ["stew", "egg", "bread"]
+
