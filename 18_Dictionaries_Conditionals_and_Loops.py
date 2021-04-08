@@ -162,3 +162,7 @@ for char in 'mosquitoes':
         pass
     print(char)
 
+# range -
+for number in range(8): # prints from 0 index 8
+    print(number)
+
