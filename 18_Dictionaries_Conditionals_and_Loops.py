@@ -87,3 +87,15 @@ print("Fruit Basket is", fruit_basket)
 print(id(fruit_basket))
 print(id(new_fruit_basket))
 # this doesn't effectively copy. it is just a pointer
+
+
+# types of copy
+# Shallow Copy
+
+new_fruit_basket2 = fruit_basket.copy()
+print(fruit_basket)
+print(new_fruit_basket2)
+
+
+print(id(new_fruit_basket2))
+
