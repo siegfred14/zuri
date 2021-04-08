@@ -132,3 +132,9 @@ print("================== \n")
 #LOOPS - Statements that are executed sequencially
 # while, for
 
+names = ['siegfred', 'toonie', 'tola', 'kuza']
+
+if isinstance(names, list):
+    for i in names:
+        print(i)
+
