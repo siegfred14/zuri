@@ -124,3 +124,8 @@ number = 10
 # else:
 #     print(f"{number} is not equal to 10")
 
+# A different approach
+print(True if number > 10 else False)
+
+print("================== \n")
+
