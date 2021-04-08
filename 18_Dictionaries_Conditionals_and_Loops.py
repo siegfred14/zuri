@@ -117,3 +117,10 @@ print(new_fruit_basket3)
 # number = int(input("Enter a new number" ))
 number = 10
 
+# if number > 10:
+#     print("yes, number is greater or equals to 10")
+# elif number == 10:
+#     print("yes, number is equal than 10")
+# else:
+#     print(f"{number} is not equal to 10")
+
