@@ -113,3 +113,7 @@ fruit_basket["pineapple"]["good"] = 25
 print(new_fruit_basket2)
 print(new_fruit_basket3)
 
+# CONDITIONALS
+# number = int(input("Enter a new number" ))
+number = 10
+
