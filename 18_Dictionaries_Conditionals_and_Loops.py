@@ -105,3 +105,11 @@ import copy
 new_fruit_basket3 = copy.deepcopy(fruit_basket)
 print(new_fruit_basket3)
 
+
+print("===============")
+# if a key is updated, copy would be updated as well, but deep copy will not
+# This is because deepcopy creates a new independent instance
+fruit_basket["pineapple"]["good"] = 25
+print(new_fruit_basket2)
+print(new_fruit_basket3)
+
