@@ -142,3 +142,9 @@ names = ['siegfred', 'toonie', 'tola', 'kuza']
 for char in 'mosquitoes':
     print(char)
 
+# break statement - used to break a loop
+for char in 'mosquitoes':
+    if char == 'u':
+        break
+    print(char) # this stops iterating immediately before u
+
