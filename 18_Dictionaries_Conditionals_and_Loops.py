@@ -79,3 +79,11 @@ fruit_basket = {
     "pawpaw": 3,
     "pineapple": {"good": 30, "bad": 34}
 }
+
+new_fruit_basket = fruit_basket
+print("New Fruit Basket is", new_fruit_basket)
+print("Fruit Basket is", fruit_basket)
+
+print(id(fruit_basket))
+print(id(new_fruit_basket))
+# this doesn't effectively copy. it is just a pointer
