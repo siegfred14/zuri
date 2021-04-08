@@ -148,3 +148,11 @@ for char in 'mosquitoes':
         break
     print(char) # this stops iterating immediately before u
 
+# continue statement - this skips the specified element
+for char in 'mosquitoes':
+    if char == 'u':
+        continue # this skips u in the iteration
+    print(char)
+
+print('===============')
+
