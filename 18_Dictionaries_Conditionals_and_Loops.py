@@ -180,3 +180,6 @@ else:
 foods = ["white_rice", "spaghetti", "beans"]
 food_add = ["stew", "egg", "bread"]
 
+for food in foods:
+    for comp in food_add:
+        print(food, comp)
