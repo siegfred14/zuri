@@ -170,3 +170,9 @@ for number in range(8): # prints from 0 to index 8
 for number in range(2, 8): # prints from 2 to index 8
     print(number)
 
+# range with step
+for number in range(0, 50, 5): # prints from 5 steps 0 to index 50,
+    print(number)
+else:
+    print('Loop processing Done')
+
