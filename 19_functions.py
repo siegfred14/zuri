@@ -9,6 +9,11 @@ simple_function()
 
 # parameters are added to the function, then called as arguments
 
-def simple_function(name):
-    print(f"Hello {name}")
+# def simple_function(name):
+#     print(f"Hello {name}")
+#
+name_input = input("enter your name: ")
+
+simple_function(name_input) # function call
+
 
