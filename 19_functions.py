@@ -4,3 +4,6 @@
 def simple_function():
     print('This is my first function!')
 
+# to call the function
+simple_function()
+
