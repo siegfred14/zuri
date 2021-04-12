@@ -17,7 +17,13 @@ simple_function()
 # simple_function(name_input) # function call
 
 
-You can have multiple parameters for your function
+# You can have multiple parameters for your function
 def simple_function(firstName, lastName):
     print(f"Hello {firstName} are you sure your Last Name is {lastName}")
+
+
+first_name = input("enter your first name: ")
+last_name = input("enter your last name: ")
+
+simple_function(first_name, last_name)
 
