@@ -1,0 +1,3 @@
+# FUNCTIONS
+# A function is a block of codes which only runs when called
+
