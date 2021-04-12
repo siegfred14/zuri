@@ -30,14 +30,29 @@ simple_function()
 # for proper practice, let your function handle one thing
 
 # Arbitrary argument - args return tuples
-def people_names(*args):
-    print(args)
+# def people_names(*args):
+#     print(args)
 
 
-first_name = input("enter your first name: ")
-last_name = input("enter your last name: ")
+# first_name = input("enter your first name: ")
+# last_name = input("enter your last name: ")
 
-simple_function(first_name, last_name)
-people_names(first_name, last_name)
+# simple_function(first_name, last_name)
+#people_names(first_name, last_name)
 
 print('===============')
+
+
+# using args
+def people_names(first_name, *args):
+    print(first_name)
+    last_name, middle_name = args
+    print(last_name)
+    print(type(args))
+
+
+first_name = 'Manny'
+last_name = 'Johnson'
+middle_name = 'Devs'
+
+simple_function(first_name, last_name)
