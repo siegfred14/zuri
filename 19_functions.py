@@ -29,3 +29,15 @@ simple_function()
 
 # for proper practice, let your function handle one thing
 
+# Arbitrary argument - args return tuples
+def people_names(*args):
+    print(args)
+
+
+first_name = input("enter your first name: ")
+last_name = input("enter your last name: ")
+
+simple_function(first_name, last_name)
+people_names(first_name, last_name)
+
+print('===============')
