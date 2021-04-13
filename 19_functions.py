@@ -44,15 +44,23 @@ print('===============')
 
 
 # using args
-def people_names(first_name, *args):
-    print(first_name)
-    last_name, middle_name = args
-    print(last_name)
-    print(type(args))
+# def people_names(first_name, *args):
+#     print(first_name)
+#     last_name, middle_name = args
+#     print(last_name)
+#     print(type(args))
 
 
-first_name = 'Manny'
-last_name = 'Johnson'
-middle_name = 'Devs'
+# first_name = 'Manny'
+# last_name = 'Johnson'
+# middle_name = 'Devs'
 
-simple_function(first_name, last_name)
+# simple_function(first_name, last_name)
+
+
+# Using Named Arguments - this allows you to call your arguments at random
+def people_names(firstname, lastname, middlename):
+    print(firstname)
+    print(lastname)
+    print(middlename)
+
