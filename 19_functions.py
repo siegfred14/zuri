@@ -81,3 +81,11 @@ def people_names_new(*args, **kwargs):
 
     # print(middlename)
 
+first_name = 'Manny'
+last_name = 'Johnson'
+middle_name = 'Devs'
+
+#people_names(first_name, last_name, middle_name) # normal call
+people_names_new(middlename = middle_name, lastname=last_name, firstname=first_name)
+people_names_new('Philip', middlename = middle_name, lastname=last_name, firstname=first_name)
+# philip is updated as a tuple because it is called as an argument *args
