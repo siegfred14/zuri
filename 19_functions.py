@@ -98,3 +98,7 @@ def calling_function(func):
 
 calling_function(people_names_new)
 
+# function that returns
+def square_function(value):
+    return value **2
+
