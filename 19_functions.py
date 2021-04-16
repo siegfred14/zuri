@@ -105,4 +105,7 @@ def square_function(value):
 squared_value = square_function(10)
 print(squared_value)
 
+# Lambda - small anonymous functions - they always return a function
+squared_value = lambda x: x ** 2
+print(squared_value(10))
 
