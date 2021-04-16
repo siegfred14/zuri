@@ -102,3 +102,7 @@ calling_function(people_names_new)
 def square_function(value):
     return value **2
 
+squared_value = square_function(10)
+print(squared_value)
+
+
