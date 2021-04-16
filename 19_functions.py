@@ -64,3 +64,8 @@ def people_names(firstname, lastname, middlename):
     print(lastname)
     print(middlename)
 
+
+first_name = 'Manny'
+last_name = 'Johnson'
+middle_name = 'Devs'
+
