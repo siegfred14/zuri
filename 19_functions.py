@@ -89,3 +89,12 @@ middle_name = 'Devs'
 people_names_new(middlename = middle_name, lastname=last_name, firstname=first_name)
 people_names_new('Philip', middlename = middle_name, lastname=last_name, firstname=first_name)
 # philip is updated as a tuple because it is called as an argument *args
+
+
+# A function can call another function
+def calling_function(func):
+    func("jones", "franklin", middlename = middle_name, lastname=last_name, firstname=first_name)
+
+
+calling_function(people_names_new)
+
