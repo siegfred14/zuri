@@ -72,3 +72,12 @@ middle_name = 'Devs'
 # people_names(first_name, last_name, middle_name) # normal call
 people_names(middlename = middle_name, lastname=last_name, firstname=first_name) # normal call
 
+
+# Using **kwargs (key word arguments) - this is like args but returns a dictionary
+def people_names_new(*args, **kwargs):
+    print(args)
+    print(kwargs)
+    # print(kwargs.get("lastname"))
+
+    # print(middlename)
+
