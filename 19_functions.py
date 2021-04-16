@@ -69,3 +69,6 @@ first_name = 'Manny'
 last_name = 'Johnson'
 middle_name = 'Devs'
 
+# people_names(first_name, last_name, middle_name) # normal call
+people_names(middlename = middle_name, lastname=last_name, firstname=first_name) # normal call
+
