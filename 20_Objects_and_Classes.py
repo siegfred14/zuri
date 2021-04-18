@@ -7,3 +7,7 @@
 # properties - colour, transmission type, max speed
 # methods - start - stop, accelerate, change transmission
 
+# Attributes - properties affiliated with a given class
+# Methods - functions affiliated with some class
+# Instance - object created through calling of that class
+
