@@ -23,3 +23,16 @@ car_1 = Car()
 
 print(type(car_1))
 
+
+# Setting attributes of a class
+class Car:
+    pass
+    # def __init__(self, name, color):
+
+
+car_1 = Car()
+car_2 = Car()
+car_1.name = 'mercedes'
+car_2.name = 'Benz'
+print(car_1.name)
+print(car_2.name)
