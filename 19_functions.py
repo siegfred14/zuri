@@ -98,12 +98,15 @@ def calling_function(func):
 
 calling_function(people_names_new)
 
+
 # function that returns
 def square_function(value):
     return value **2
 
+
 squared_value = square_function(10)
 print(squared_value)
+
 
 # Lambda - small anonymous functions - they always return a function
 squared_value = lambda x: x ** 2
