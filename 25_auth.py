@@ -30,14 +30,14 @@ def init():
 def login():
     print("******* Login *******")
 
-    account_number_from_user = int(input("What is Your Account Number? \n"))
+    account_number_from_user = (input("What is Your Account Number? \n"))
     is_valid_account_number = account_number_validation(account_number_from_user)
 
     if is_valid_account_number:
         password = input('Input Your Password \n')
 
         for account_number, userDetails in database.items():
-            if account_number == account_number_from_user:
+            if account_number == int(account_number_from_user):
                 if userDetails[3] == password:
                     bank_operation(userDetails)
 
