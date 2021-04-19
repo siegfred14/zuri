@@ -39,13 +39,16 @@ def login():
     if is_valid_account_number:
         password = input('Input Your Password \n')
 
-        for account_number, userDetails in database.items():
+        for account_number, user_details in database.items():
             if account_number == int(account_number_from_user):
-                if userDetails[3] == password:
-                    bank_operation(userDetails)
+                if user_details[3] == password:
+                    bank_operation(user_details)
 
         print('Invalid Account or Password')
         login()
+
+    else:
+        init()
 
 
 # user validation 1
@@ -59,11 +62,16 @@ def account_number_validation(account_number):
             # ensure account number is an integer by trying to change it to an integer
             try:
                 int(account_number)
+                return True
             except ValueError:
-                print('Account Number Cannot be More Than 10 Digits')
+                print('Invalid Account Number, Account Number Should be an Integer')
+                return False
             except TypeError:
                 print('Invalid Account Type')
+                return False
+
         else:
+            print('Account number cannot be less or more than 10 digits')
             return False
     else:
         print("Account number is a required field")
