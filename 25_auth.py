@@ -10,7 +10,10 @@
 # Initializing the system
 import random
 
-database = {} # dictionary
+# dictionary
+database = {
+    3452986597: ["Siegfred", "Samson", "siegfred@zuri.com", "password", 200]
+}
 
 
 def init():
