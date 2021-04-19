@@ -31,16 +31,18 @@ def login():
     print("******* Login *******")
 
     account_number_from_user = int(input("What is Your Account Number? \n"))
+    is_valid_account_number = account_number_validation(account_number_from_user)
 
-    password = input('Input Your Password \n')
+    if is_valid_account_number:
+        password = input('Input Your Password \n')
 
-    for account_number, userDetails in database.items():
-        if account_number == account_number_from_user:
-            if userDetails[3] == password:
-                bank_operation(userDetails)
+        for account_number, userDetails in database.items():
+            if account_number == account_number_from_user:
+                if userDetails[3] == password:
+                    bank_operation(userDetails)
 
-    print('Invalid Account or Password')
-    login()
+        print('Invalid Account or Password')
+        login()
 
 
 # user validation 1
