@@ -49,13 +49,17 @@ def login():
 def account_number_validation(account_number):
     # check if account number is not empty
     if account_number:
+
         # check if account number is 10 digits
         if len(str(account_number)) == 10:
+
             # ensure account number is an integer by trying to change it to an integer
             try:
                 int(account_number)
             except ValueError:
                 print('Account Number Cannot be More Than 10 Digits')
+            except TypeError:
+                print('Invalid Account Type')
         else:
             return False
     else:
