@@ -18,6 +18,10 @@ def read(user_account_number):
 
 def update(user_account_number):
     print("update user record")
+    # find user with account number
+    # fetch the content of the file
+    # update the content of the file
+    # save the file
 
 
 def delete(user_acoount_number):
