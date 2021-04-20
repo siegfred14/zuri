@@ -14,6 +14,8 @@ def create(user_details):
 
 def read(user_account_number):
     print("read user record")
+    # find user with account number
+    # fetch the content of the file
 
 
 def update(user_account_number):
