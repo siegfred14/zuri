@@ -7,6 +7,9 @@
 
 def create(user_details):
     print("create a new user record")
+    # create a file
+    # name of file would be account_number.txt
+    # add the user details to the file
 
 
 def read(user_account_number):
