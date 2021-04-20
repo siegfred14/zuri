@@ -29,6 +29,9 @@ def update(user_account_number):
 
 def delete(user_acoount_number):
     print("delete_user record")
+    # find user with account number
+    # delete the user record(file)
+    # return true
 
 
 def find(user_account_number):
