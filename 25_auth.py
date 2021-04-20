@@ -9,11 +9,9 @@
 
 # Initializing the system
 import random
+import database
 
 # dictionary
-database = {
-    3452986597: ["Siegfred", "Samson", "siegfred@zuri.com", "password", 200]
-}
 
 
 def init():
