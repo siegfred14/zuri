@@ -97,12 +97,24 @@ def does_email_exist(email):
 
     return False
 
+
+def does_account_number_exist(account_number):
+    all_users = os.listdir(user_db_path)
+
+    for user in all_users:
+        if user == str(account_number) + ".txt":
+            return True
+
+    return False
+
 # create(3440288593, ['Siegfred', 'Samson', 'siegfred@zuri.com', 230])
 
 # delete(5647850565)
 # create(5647850565, ["Sam", "Fred", "sam@domo.com", 123456])
 # print(read(56478509765))
 # print(read(['one', 'two']))
-
 # does_email_exist(3440288593, 'siegfred@zuri.com')
-print(does_email_exist('sam@domo.com'))
+# print(does_email_exist('sam@domo.com'))
+
+
+print(does_account_number_exist(5470142077))
