@@ -38,10 +38,13 @@ def login():
     if is_valid_account_number:
         password = input('Input Your Password \n')
 
-        for account_number, user_details in database.items():
-            if account_number == int(account_number_from_user):
-                if user_details[3] == password:
-                    bank_operation(user_details)
+        user = database.authenticated_user(account_number_from_user, password)
+        if user:
+            bank_operation(user)
+
+            # for account_number, user_details in database.items():
+            #     if account_number == int(account_number_from_user):
+            #         if user_details[3] == password:
 
         print('Invalid Account or Password')
         login()
@@ -60,8 +63,8 @@ def register():
     password = input("Create A Password For Yourself \n")
 
     account_number = generating_account_number()
-    prepared_user_details = first_name + "," + last_name + "," + email + "," + password + "," + str(0)
-    is_user_created = database.create(account_number, prepared_user_details)
+
+    is_user_created = database.create(account_number, first_name, last_name, email, password)
 
     if is_user_created:
         print('Your Account Has Been Created')
@@ -75,6 +78,7 @@ def register():
     else:
         print("Something went wrong, please try again")
         register()
+
 
 def bank_operation(user):
     print("Welcome %s %s" % (user[0], user[1]))
