@@ -9,29 +9,39 @@ import validation
 user_db_path = "data/user_record/"
 
 
-def create(user_account_number, user_details):
+def create(user_account_number, first_name, last_name, email, password):
+    # create a file
+    # name of file would be account_number.txt
+    # add the user details to the file
+    # return true
+    # if saving to file fails, delete created file
+
+    user_data = first_name + "," + last_name + "," + email + "," + password + "," + str(0)
+
+    if does_account_number_exist(user_account_number):
+        return False
+
+    if does_email_exist(email):
+        print('User Already Exits')
+        return False
+
     completion_state = False
 
     try:
         f = open(user_db_path + str(user_account_number) + ".txt", "x")
 
     except FileExistsError:
-        print('User already exists')
-        # delete the already created file and print out error, then return false
+        does_file_contain_data = read(user_db_path + str(user_account_number) + ".txt")
+        if not does_file_contain_data:
+            delete(user_account_number)
 
     else:
-        f.write(str(user_details))
+        f.write(str(user_data))
         completion_state = True
 
     finally:
         f.close()
         return completion_state
-
-    # create a file
-    # name of file would be account_number.txt
-    # add the user details to the file
-    # return true
-    # if saving to file fails, delete created file
 
 
 def read(user_account_number):
@@ -58,6 +68,8 @@ def read(user_account_number):
     else:
         return f.readline()
 
+    return False
+
 
 def update(user_account_number):
     print("update user record")
@@ -70,6 +82,9 @@ def update(user_account_number):
 
 def delete(user_account_number):
     # find user with account number
+    # delete the user record(file)
+    # return true
+
     is_delete_successful = False
 
     if os.path.exists(user_db_path + str(user_account_number) + ".txt"):
@@ -82,8 +97,6 @@ def delete(user_account_number):
 
         finally:
             return is_delete_successful
-    # delete the user record(file)
-    # return true
 
 
 def does_email_exist(email):
@@ -107,6 +120,17 @@ def does_account_number_exist(account_number):
 
     return False
 
+
+def authenticated_user(account_number, password):
+    if does_account_number_exist(account_number):
+        user = str.split(read(account_number), ',')
+        if password == user[3]:
+            return user
+
+    return False
+
+
+
 # create(3440288593, ['Siegfred', 'Samson', 'siegfred@zuri.com', 230])
 
 # delete(5647850565)
@@ -115,6 +139,7 @@ def does_account_number_exist(account_number):
 # print(read(['one', 'two']))
 # does_email_exist(3440288593, 'siegfred@zuri.com')
 # print(does_email_exist('sam@domo.com'))
+# print(does_account_number_exist(5470142077))
 
 
-print(does_account_number_exist(5470142077))
+
