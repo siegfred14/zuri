@@ -76,7 +76,7 @@ def delete(user_account_number):
     # return true
 
 
-def find(user_account_number):
+def does_email_exist(user_account_number, email):
     print('find user')
     # find user record in the data folder
 
