@@ -11,7 +11,7 @@
 import random
 import database
 import validation
-
+from getpass import getpass
 # dictionary
 
 
@@ -36,7 +36,10 @@ def login():
     is_valid_account_number = validation.account_number_validation(account_number_from_user)
 
     if is_valid_account_number:
-        password = input('Input Your Password \n')
+
+        # modifyiing password to appear encrypted
+        # password = input('Input Your Password \n')
+        password = getpass('What is Your Password \n')
 
         user = database.authenticated_user(account_number_from_user, password)
         if user:
