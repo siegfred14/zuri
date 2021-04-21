@@ -14,7 +14,6 @@ def create(account_number, user_details):
     except FileExistsError:
         print('user already exists')
         # delete the already created file and print out error, then return false
-        return completion_state
 
     else:
         f.write(str(user_details))
@@ -22,8 +21,7 @@ def create(account_number, user_details):
 
     finally:
         f.close()
-
-    return completion_state
+        return completion_state
 
     # create a file
     # name of file would be account_number.txt
