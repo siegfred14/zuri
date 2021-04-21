@@ -5,7 +5,7 @@
 # Find user
 import os
 
-user_db_path = "data/user_record"
+user_db_path = "data/user_record/"
 
 
 def create(account_number, user_details):
@@ -49,10 +49,9 @@ def update(user_account_number):
 
 
 def delete(user_account_number):
-    print("delete user record")
-
     # find user with account number
     is_delete_successful = False
+
     if os.path.exists(user_db_path + str(user_account_number) + ".txt"):
         try:
             os.remove(user_db_path + str(user_account_number) + ".txt")
@@ -61,7 +60,8 @@ def delete(user_account_number):
         except FileNotFoundError:
             print("User Not Found")
 
-    return is_delete_successful
+        finally:
+            return is_delete_successful
     # delete the user record(file)
     # return true
 
@@ -73,4 +73,5 @@ def find(user_account_number):
 
 # create(3440288593, ['Siegfred', 'Samson', 'siegfred@zuri.com', 230])
 
-delete(7221701769)
+# delete(5647850565)
+# create(5647850565, ["Sam", "Fred", "sam@domo.com", 123456])
