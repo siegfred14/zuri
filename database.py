@@ -4,6 +4,7 @@
 # delete record
 # Find user
 import os
+import validation
 
 user_db_path = "data/user_record/"
 
@@ -35,8 +36,14 @@ def create(user_account_number, user_details):
 
 def read(user_account_number):
     # find user with account number
+    is_valid_account_number = validation.account_number_validation(user_account_number)
+
     try:
-        f = open(user_db_path + str(user_account_number) + ".txt", "r")
+        if is_valid_account_number:
+            f = open(user_db_path + str(user_account_number) + ".txt", "r")
+        else:
+            f = open(user_db_path + user_account_number, "r")
+
         # fetch the content of the file
 
     except FileNotFoundError:
@@ -45,7 +52,10 @@ def read(user_account_number):
     except FileExistsError:
         print("User Doesnt Exist")
 
-    finally:
+    except TypeError:
+        print('Invalid Account Number Format')
+
+    else:
         return f.readline()
 
 
@@ -88,4 +98,6 @@ def does_email_exist(user_account_number, email):
 # delete(5647850565)
 # create(5647850565, ["Sam", "Fred", "sam@domo.com", 123456])
 # print(read(56478509765))
+print(read(['one', 'two']))
+
 # does_email_exist(3440288593, 'siegfred@zuri.com')
