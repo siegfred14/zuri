@@ -8,11 +8,11 @@ import os
 user_db_path = "data/user_record/"
 
 
-def create(account_number, user_details):
+def create(user_account_number, user_details):
     completion_state = False
 
     try:
-        f = open(user_db_path + str(account_number) + ".txt", "x")
+        f = open(user_db_path + str(user_account_number) + ".txt", "x")
 
     except FileExistsError:
         print('User already exists')
@@ -34,9 +34,19 @@ def create(account_number, user_details):
 
 
 def read(user_account_number):
-    print("read user record")
     # find user with account number
-    # fetch the content of the file
+    try:
+        f = open(user_db_path + str(user_account_number) + ".txt", "r")
+        # fetch the content of the file
+
+    except FileNotFoundError:
+        print("File Not Found")
+
+    except FileExistsError:
+        print("User Doesnt Exist")
+
+    finally:
+        return f.readline()
 
 
 def update(user_account_number):
@@ -75,3 +85,4 @@ def find(user_account_number):
 
 # delete(5647850565)
 # create(5647850565, ["Sam", "Fred", "sam@domo.com", 123456])
+print(read(56478509765))
