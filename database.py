@@ -59,5 +59,5 @@ def find(user_account_number):
     # find user record in the data folder
 
 
-create(3440288593, ['Siegfred', 'Samson', 'siegfred@zuri.com', 230])
+# create(3440288593, ['Siegfred', 'Samson', 'siegfred@zuri.com', 230])
 
