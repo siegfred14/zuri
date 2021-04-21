@@ -12,7 +12,6 @@ import random
 import database
 import validation
 
-
 # dictionary
 
 
@@ -48,6 +47,7 @@ def login():
         login()
 
     else:
+        print("Account Number Invalid; ensure you have only integers!")
         init()
 
 
@@ -60,13 +60,21 @@ def register():
     password = input("Create A Password For Yourself \n")
 
     account_number = generating_account_number()
+    prepared_user_details = first_name + "," + last_name + "," + email + "," + password + "," + str(0)
+    is_user_created = database.create(account_number, prepared_user_details)
 
-    database[account_number] = [ first_name, last_name, email, password] # This creates a key in th dictionary database and adds the first_name et-al as values
+    if is_user_created:
+        print('Your Account Has Been Created')
+        print("== ==== ===== ==== ==")
+        print('Your Account Number is: %d' % account_number)
+        print("Make sure you keep it safe")
+        print("== ==== ===== ==== ==")
 
-    print(f"Your Account {account_number} has been successfully created")
+        login()
 
-    login()
-
+    else:
+        print("Something went wrong, please try again")
+        register()
 
 def bank_operation(user):
     print("Welcome %s %s" % (user[0], user[1]))
