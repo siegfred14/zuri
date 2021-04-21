@@ -86,18 +86,23 @@ def delete(user_account_number):
     # return true
 
 
-def does_email_exist(user_account_number, email):
+def does_email_exist(email):
     all_users = os.listdir(user_db_path)
 
     for user in all_users:
-        print(f'User Printed {user}')
+        # to read user details and split the string content received into a list
+        user_list = str.split(read(user), ',')
+        if email in user_list:
+            return True
 
+    return False
 
 # create(3440288593, ['Siegfred', 'Samson', 'siegfred@zuri.com', 230])
 
 # delete(5647850565)
 # create(5647850565, ["Sam", "Fred", "sam@domo.com", 123456])
 # print(read(56478509765))
-print(read(['one', 'two']))
+# print(read(['one', 'two']))
 
 # does_email_exist(3440288593, 'siegfred@zuri.com')
+print(does_email_exist('sam@domo.com'))
