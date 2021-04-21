@@ -3,16 +3,19 @@
 # update records
 # delete record
 # Find user
+import os
+
+user_db_path = "data/user_record"
 
 
 def create(account_number, user_details):
     completion_state = False
 
     try:
-        f = open("data/user_record/" + str(account_number) + ".txt", "x")
+        f = open(user_db_path + str(account_number) + ".txt", "x")
 
     except FileExistsError:
-        print('user already exists')
+        print('User already exists')
         # delete the already created file and print out error, then return false
 
     else:
@@ -45,9 +48,20 @@ def update(user_account_number):
     # return true
 
 
-def delete(user_acoount_number):
-    print("delete_user record")
+def delete(user_account_number):
+    print("delete user record")
+
     # find user with account number
+    is_delete_successful = False
+    if os.path.exists(user_db_path + str(user_account_number) + ".txt"):
+        try:
+            os.remove(user_db_path + str(user_account_number) + ".txt")
+            is_delete_successful = True
+
+        except FileNotFoundError:
+            print("User Not Found")
+
+    return is_delete_successful
     # delete the user record(file)
     # return true
 
@@ -59,3 +73,4 @@ def find(user_account_number):
 
 # create(3440288593, ['Siegfred', 'Samson', 'siegfred@zuri.com', 230])
 
+delete(7221701769)
