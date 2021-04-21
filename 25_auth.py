@@ -42,6 +42,7 @@ def login():
         password = getpass('What is Your Password \n')
 
         user = database.authenticated_user(account_number_from_user, password)
+
         if user:
             bank_operation(user)
 
