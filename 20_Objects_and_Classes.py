@@ -11,3 +11,15 @@
 # Methods - functions affiliated with some class
 # Instance - object created through calling of that class
 
+
+class Car:
+    pass
+
+
+print(type(Car))
+
+# To create a car / instantiate a car object
+car_1 = Car()
+
+print(type(car_1))
+
