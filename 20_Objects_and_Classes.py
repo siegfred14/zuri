@@ -48,3 +48,12 @@ class Car:
         self.car_color = color
 
 
+car_1 = Car('mercedes', 'Silver')
+car_2 = Car('BMW', 'Blue')
+
+# car_1.name = 'mercedes'
+# car_2.name = 'Benz'
+
+print(car_1.car_name)
+print(car_2.car_name)
+
