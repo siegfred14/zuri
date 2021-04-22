@@ -57,3 +57,17 @@ car_2 = Car('BMW', 'Blue')
 print(car_1.car_name)
 print(car_2.car_name)
 
+# Creating method for the class - you can have multiple methods per class.
+# only the first method is init (similar to constructor in JS)
+
+
+class Car:
+    # docstrings
+    def __init__(self, name, color):
+        self.car_name = name
+        self.car_color = color
+
+    def accel(self):
+        print(f"The {self.car_name} accelerates at 199mph")
+        print(f"The {self.car_name} is {self.car_color} in color \n")
+
