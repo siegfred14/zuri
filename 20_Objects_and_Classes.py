@@ -37,4 +37,14 @@ car_2.name = 'Benz'
 print(car_1.name)
 print(car_2.name)
 
-# HERE
+# This is cumbersome when you have to create attributes for many classes
+
+# Using the init method - above, it is represented by
+
+
+class Car:
+    def __init__(self, name, color):
+        self.car_name = name
+        self.car_color = color
+
+
