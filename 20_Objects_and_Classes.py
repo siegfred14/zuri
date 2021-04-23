@@ -98,3 +98,20 @@ while True:
     break  # without the break, it will run an infinite loop
 
 
+# using try except and else error
+def calc(num1, num2):
+    return num1/num2
+
+
+try:
+    num1 = int(input("Enter your first number: "))
+    num2 = int(input("Enter your second number: "))
+
+    division = calc(num1, num2)
+except ZeroDivisionError:  # to capture a ZeroDivisionError and print a self defined error
+    print('Error')
+    # we can use only except to capture all forms of error
+else:
+    print("No Type Error")  # comes on if there's no error specified under except
+finally:
+    print("This would print out irrespective of error")
