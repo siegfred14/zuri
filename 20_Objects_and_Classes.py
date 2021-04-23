@@ -84,3 +84,7 @@ car_2.accel()   # to call a method
 # print(car_1.car_name)
 # print(car_2.car_name)
 
+# to get help with dictionaries
+print(help(dict))
+print(help(Car)) #'''to get info about your class Car'''
+
