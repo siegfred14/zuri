@@ -10,3 +10,10 @@ for x in range(6):
     print(x)
 
 print('========')
+
+# combine for and if
+for x in range(6):
+    if x != 0:
+        print(x)
+
+print('========')
