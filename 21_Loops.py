@@ -20,6 +20,18 @@ print('========')
 
 # or
 for x in range(6):
-    if(not(x == 0)):
+    if not(x == 0):
         print(x)
+
+# iterating a list
+numbers = [5, 2, 5, 2, 2]
+for i in numbers:
+    result = i * 'X'
+    print(result)
+
+for i in numbers:
+    result = ''
+    for j in range(i):
+        result += 'X'
+    print(result)
 
