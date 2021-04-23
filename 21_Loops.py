@@ -35,3 +35,9 @@ for i in numbers:
         result += 'X'
     print(result)
 
+# getting the largest number in a sequence
+largest = numbers[0]
+for item in numbers:
+    if item > largest:
+        largest = item
+print(largest)
