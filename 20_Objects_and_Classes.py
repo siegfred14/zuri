@@ -86,5 +86,9 @@ car_2.accel()   # to call a method
 
 # to get help with dictionaries
 print(help(dict))
-print(help(Car)) #'''to get info about your class Car'''
+print(help(Car))  # to get info about your class Car
+
+# Dealing with Errors
+# 1. Syntax Errors - errors due to syntax, using a format/spelling that is inconsistent semicolons, spaces, etc
+# 2. Exceptions - code begins to run, then error shows
 
