@@ -92,3 +92,9 @@ print(help(Car))  # to get info about your class Car
 # 1. Syntax Errors - errors due to syntax, using a format/spelling that is inconsistent semicolons, spaces, etc
 # 2. Exceptions - code begins to run, then error shows
 
+# PRACTICAL
+while True:
+    print('Zuri is now Live')
+    break  # without the break, it will run an infinite loop
+
+
