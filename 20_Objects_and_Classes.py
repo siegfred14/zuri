@@ -71,3 +71,16 @@ class Car:
         print(f"The {self.car_name} accelerates at 199mph")
         print(f"The {self.car_name} is {self.car_color} in color \n")
 
+
+car_1 = Car('mercedes', 'Silver')
+car_2 = Car('BMW', 'Blue')
+
+# car_1.name = 'mercedes'
+# car_2.name = 'Benz'
+
+car_1.accel()   # to call a method
+car_2.accel()   # to call a method
+
+# print(car_1.car_name)
+# print(car_2.car_name)
+
