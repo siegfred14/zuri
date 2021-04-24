@@ -3,3 +3,10 @@ def nameOfFunction(count):
 
 
 nameOfFunction(4)
+
+# Or
+def nameOfFunction(count):
+    print(f"This is a function {count}")
+
+nameOfFunction(4)
+
