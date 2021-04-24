@@ -1,27 +1,33 @@
-def nameOfFunction(count):
+def name_of_function(count):
     print("This is a function %d" %count)
 
 
-nameOfFunction(4)
+name_of_function(4)
+
 
 # Or
-def nameOfFunction(count):
+def name_of_function(count):
     print(f"This is a function {count}")
 
-nameOfFunction(4)
+
+name_of_function(4)
+
 
 # Passing multiple parameters
-def nameOfFunction(name, count):
+def name_of_function(name, count):
     print("%s called a function with count %d" %(name, count))
 
-nameOfFunction('Sam', 4)
-nameOfFunction('Jason', 6)
-nameOfFunction('Rachael', 8)
+
+name_of_function('Sam', 4)
+name_of_function('Jason', 6)
+name_of_function('Rachael', 8)
+
 
 # To display a string certain number of times
-def nameOfFunction(name, count):
+def name_of_function(name, count):
     print(name * count)
 
-nameOfFunction('Sam ', 4)
-nameOfFunction('Jason ', 6)
-nameOfFunction('Rachael ', 8)
+
+name_of_function('Sam ', 4)
+name_of_function('Jason ', 6)
+name_of_function('Rachael ', 8)
