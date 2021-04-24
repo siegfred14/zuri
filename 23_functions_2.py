@@ -18,3 +18,10 @@ nameOfFunction('Sam', 4)
 nameOfFunction('Jason', 6)
 nameOfFunction('Rachael', 8)
 
+# To display a string certain number of times
+def nameOfFunction(name, count):
+    print(name * count)
+
+nameOfFunction('Sam ', 4)
+nameOfFunction('Jason ', 6)
+nameOfFunction('Rachael ', 8)
