@@ -10,3 +10,7 @@ def nameOfFunction(count):
 
 nameOfFunction(4)
 
+# Passing multiple parameters
+def nameOfFunction(name, count):
+    print("%s called a function with count %d" %(name, count))
+
