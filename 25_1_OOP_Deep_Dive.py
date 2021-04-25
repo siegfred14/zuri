@@ -7,3 +7,6 @@ class Animal:
         Animal.counter += 1
 
 
+animal_one = Animal('rat')
+animal_two = Animal('cat')
+
