@@ -14,7 +14,7 @@ print(animal_one.animal_type)
 print(animal_two.animal_type)
 print(animal_one.counter)
 
-# to check how many times an object is being instanciated/clled in a program
+# to check how many times an object is being instantiated/called in a program
 # print(Animal.counter)
 
 
