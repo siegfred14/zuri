@@ -14,3 +14,11 @@ print(animal_one.animal_type)
 print(animal_two.animal_type)
 print(animal_one.counter)
 
+# to check how many times an object is being instanciated/clled in a program
+# print(Animal.counter)
+
+
+# DIFFERENT METHODS IN PYTHON
+# Instance Method
+# Class Method
+# Static Method
