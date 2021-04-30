@@ -28,6 +28,10 @@ class Budget:
 
 
 category = Budget("clothing")
+print("This is deposit for clothing", category.deposit(500))
+print("This is deposit for clothing", category.withdraw(700))
 
 category_1 = Budget("Food")
-category_2 = Budget("Entertainment")
+print("This is deposit for clothing", category_1.deposit(800))
+
+# category_2 = Budget("Entertainment")
