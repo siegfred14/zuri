@@ -16,3 +16,8 @@ class Budget:
 
     def transfer(self):
         pass
+
+
+category = Budget("clothing")
+category_1 = Budget("Food")
+category_2 = Budget("Entertainment")
