@@ -5,14 +5,16 @@ class Budget:
         self.category - 1000
 
     # methods
-    def deposit(self):
-        return "this is a deposit method"
+    def deposit(self, amount):
+        self.amount += amount
+        return self.amount
 
     def check_balance(self):
         pass
 
-    def withdraw(self):
-        pass
+    def withdraw(self, amount):
+        self.amount -= amount
+        return self.amount
 
     def transfer(self):
         pass
