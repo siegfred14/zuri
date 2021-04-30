@@ -9,15 +9,18 @@ class Budget:
         self.amount += amount
         return self.amount
 
-    def check_balance(self):
-        pass
+    def check_balance(self, amount):
+        if self.amount < amount:
+            return False
 
     def withdraw(self, amount):
         self.amount -= amount
         return self.amount
 
-    def transfer(self):
-        pass
+    def transfer(self, amount, category):
+        if self.check_balance(amount) == True:
+            self.amount -= amount
+            category.amount += amount
 
 
 category = Budget("clothing")
